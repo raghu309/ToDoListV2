@@ -1,0 +1,21 @@
+
+<%-include ("header")-%>
+
+<div class="main-list containter m-auto">
+    <h1><%= listName %></h1>
+
+    <% for(let i=0; i<items.length; i++) { %>
+    <form action="/delete" method="post">
+        <input type="checkbox" name="delItemId" value="<%=items[i]._id%>" onclick="this.form.submit()">
+        <span> <%= items[i].name %> </span>
+        <input type="hidden" name="listName" value="<%=listName%>">
+    </form>
+    <% } %>
+    <form action="/" method="post">
+        <input type="text" name="newItem" placeholder="Enter Item" autocomplete="off">
+        <br>
+        <button name="listName" style="color: white;" class="btn btn-sm btn-outline-primary" type="submit" value="<%= listName %>">Add Task</button>
+    </form>
+  </div>
+
+  <%-include ("footer")-%>

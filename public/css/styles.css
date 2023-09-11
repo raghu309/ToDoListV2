@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    background-color: lightblue;
+}
+
+nav {
+    background: #afc5e7;
+    margin-bottom: 30px;
+}
+
+input:checked+span {
+    text-decoration: line-through;
+    text-decoration-color: #342f3d;
+}
+
+span {
+    font-size: large;
+}
+
+.main-list {
+    color: white;
+    margin-top: 80px;
+    background:rgb(79, 129, 161);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    padding: 30px;
+}
+
+footer {
+    margin-top: 50px;
+    margin: auto;
+}
